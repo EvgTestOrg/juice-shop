@@ -124,6 +124,8 @@ function loadHint (hint: ChallengeHint): HTMLElement {
   cancelButton.style.bottom = '-22px'
   cancelButton.style.cursor = 'pointer'
 
+  textBox.innerHTML = snarkdown(hint.text)
+  
   elem.appendChild(picture)
   elem.appendChild(textBox)
 
